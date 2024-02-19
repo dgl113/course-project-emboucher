@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comox Valley Farmers Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a77f985c66.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showNav() {
+        var element = document.getElementById("list-container");
+        element.classList.toggle("show-nav");
+      }
+    </script>
+  </head>
+  <body class="communitypage">
+    <div class="nav-container">
+      <header class="desktop-layout">
+        <nav>
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/logo1.png"
+              alt="comox valley farmers market logo and menue"
+            />
+          </a>
+          <a class="toggle" onclick="showNav()"
+            ><i class="fas fa-bars" aria-hidden="true"></i
+          ></a>
+          <div id="list-container">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ourmarkets.html">Our Markets</a></li>
+              <li class="currentpage">
+                <a href="community.html">Join the Community</a>
+              </li>
+              <li><a href="construction.html">Contact Us</a></li>
+              <li><a href="construction.html">About Us</a></li>
+              <li><a href="construction.html">Vendors</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <section class="hero mobile-layout desktop-layout">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        title="planting tomatoes"
+        poster="images/planting-cover.png"
+      >
+        <source src="images/planting.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+      <h1>
+        <strong>Join Our Community</strong>
+      </h1>
+      <h2>Become a member today!</h2>
+      <div class="illustration"></div>
+      <div class="hero-content-container">
+        <p>
+          There are many ways to engage with our CVFM community beyond just
+          shopping. We love hosting musicians, welcoming new volunteers, and are
+          continuously seeking additional vendors to join our markets.
+        </p>
+
+        <div class="button-container">
+          <a class="button" href="#section1">Stay in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg">
+      <section class="volunteer mobile-layout desktop-layout">
+        <h2>Volunteer with us!</h2>
+        <p>
+          We depend on committed volunteers to run our weekly markets, offering
+          perks like early access, gifts, discounts, and tickets to the Fall
+          Harvest Feast. Join us by volunteering today!
+        </p>
+        <a
+          class="button"
+          href="
+        https://forms.gle/jC42pvAGAEgofnbz6"
+          target="_blank"
+          >Volunteer Application</a
+        >
+      </section>
+    </div>
+
+    <div class="bg">
+      <section class="vendor mobile-layout desktop-layout">
+        <h2>Apply to be a Vendor</h2>
+        <p>
+          Elevate your business with ease in 6 simple steps. Join our vibrant
+          community and enjoy exclusive benefits, including prime booth
+          locations and special events.
+        </p>
+        <div class="three-step-wrap">
+          <div class="step-container">
+            <div class="number-wrap">
+              <img class="number" src="images/1.png" alt="1" />
+              <h3>Pre-Application Verification</h3>
+            </div>
+            <ol class="hide-on-mobile">
+              <li>Ensure you meet minimum requirements to become a vendor.</li>
+              <li>
+                Confirm if you are in the Comox Valley or Strathcona Regional
+                District.
+              </li>
+              <li>Verify that your products fall under eligible categories.</li>
+            </ol>
+          </div>
+          <div class="step-container">
+            <div class="number-wrap">
+              <img class="number" src="images/2.png" alt="2" />
+              <h3>Pre-Application Inquiry</h3>
+            </div>
+            <ol class="hide-on-mobile">
+              <li>Contact us BEFORE you fill out an application</li>
+              <li>
+                Email <a href="mailto:info@cvfm.ca">info@cvfm.ca</a> if it's
+                your first application.
+              </li>
+              <ul>
+                <li>List of products to sell.</li>
+                <li>Preferred start date.</li>
+                <li>Local ingredients list if applicable.</li>
+              </ul>
+              <li>Wait for approval before proceeding to Step 3.</li>
+            </ol>
+          </div>
+
+          <div class="step-container">
+            <div class="number-wrap">
+              <img class="number" src="images/3.png" alt="3" />
+              <h3>Documentation Check</h3>
+            </div>
+            <ol class="hide-on-mobile">
+              <li>Collect and upload:</li>
+              <ul>
+                <li>Food Safe/Market Safe Certificate.</li>
+                <li>
+                  Confirmation, Health Permit, Facility Inspection, or VIHA
+                  docs.
+                </li>
+                <li>Organic Certification (if applicable).</li>
+                <li>CFIA Certification (if applicable).</li>
+                <li>
+                  Liquor License or Market Authorization (for Alcohol Vendors).
+                </li>
+              </ul>
+              <li>
+                Food Safe/Market Safe certificate required for all food sales.
+              </li>
+              <li>
+                Review
+                <a
+                  href="https://www.islandhealth.ca/sites/default/files/2018-05/temporary-food-market-guidelines.pdf"
+                  target="_blank"
+                  >Guideline for Sale of Foods at Temporary Food Markets</a
+                >
+                for risk levels.
+              </li>
+              <li>
+                If unsure about a Letter of Confirmation, contact VIHA at
+                250-331-8518.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="three-step-wrap">
+          <div class="step-container">
+            <div class="number-wrap">
+              <img class="number" src="images/4.png" alt="4" />
+              <h3>Read Rules of Membership</h3>
+            </div>
+            <ol class="hide-on-mobile">
+              <li>
+                Review the
+                <a
+                  href="https://cvfm.ca/wp-content/uploads/2021/07/Rules-of-Membership_Amended-Approved-April-20-2021-2.pdf"
+                  target="_blank"
+                  >Rules of Membership</a
+                >.
+              </li>
+              <li>
+                Complete skill testing questions at the end of the application.
+              </li>
+            </ol>
+          </div>
+          <div class="step-container">
+            <div class="number-wrap">
+              <img class="number" src="images/5.png" alt="5" />
+              <h3>Fill out Application Form</h3>
+            </div>
+            <ol class="hide-on-mobile">
+              <li>Complete online application.</li>
+              <li>Submit with note if waiting on documentation.</li>
+              <li>
+                Conditional approval possible; email missing docs to
+                <a href="mailto:info@cvfm.ca">info@cvfm.ca</a>.
+              </li>
+              <li>Receive automatic confirmation email upon submission.</li>
+              <li>Monthly review by Application Review Committee.</li>
+              <li>
+                Expect status email approximately a month after committee
+                meeting.
+              </li>
+            </ol>
+          </div>
+          <div class="step-container">
+            <div class="number-wrap">
+              <img class="number" src="images/6.png" alt="6" />
+              <h3>Membership Dues</h3>
+            </div>
+            <ol class="hide-on-mobile">
+              <li>Secure your spot in the Market Mix.</li>
+              <li>
+                New vendors, pay dues within 30 days of approval or first market
+                attendance.
+              </li>
+              <li>
+                Reapply if dues aren't paid in time (no guaranteed approval).
+              </li>
+              <li>
+                Fees due upon approval, valid annually from January 1 to
+                December 31.
+              </li>
+              <li>Membership Dues are NON Refundable.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="button-container">
+          <a
+            class="button2"
+            href="https://cvfm.ca/wp-content/uploads/2021/07/Rules-of-Membership_Amended-Approved-April-20-2021-2.pdf"
+            target="_blank"
+            >More Info</a
+          >
+
+          <a class="button" href="https://cvfm.ca/application/" target="_blank"
+            >Apply Now!</a
+          >
+        </div>
+        <!--this application is not external from the site and should be built out as a form-->
+      </section>
+    </div>
+
+    <div class="bg">
+      <section class="volunteer mobile-layout desktop-layout">
+        <h2>Shop Our Vendors</h2>
+        <p>
+          If you haven't been to the CVFM yet, let me tell you, you don't even
+          know what you're missing out on yet! Our vendors travel from both far
+          and near (but mostly near) to sell their crafted products to you. With
+          such a variety, how could you not shop local? From lettuce to lemon
+          lattice, we've got you covered.
+        </p>
+        <a class="button cursor-notallowed" href="construction.html"
+          >Our Vendors</a
+        >
+      </section>
+    </div>
+
+    <div class="bgcolour">
+      <section id="section1" class="cta mobile-layout desktop-layout">
+        <div class="cta-content-container">
+          <h2>Stay in Touch!</h2>
+          <p class="hide-on-desktop">Sign up for our newsletter!</p>
+          <p class="for-desktop">
+            Ready to turnip the beet in your inbox? Sign up for our newsletter
+            and lettuce keep you in the loop with all the fresh and fabulous
+            CVFM fun! Be the first to know about upcoming markets, seasonal
+            goodies, and exclusive promotions that are so grape, you won't want
+            to miss them. Join our community, and together, we'll create a
+            veggie good time! Subscribe today!
+          </p>
+        </div>
+        <form action="#" method="post">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Ex: John"
+          />
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder=" Ex: Smith" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex: john.smith@outlook.com"
+          />
+          <input
+            class="button submit-button form-button"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+        <div class="section-illustration-bottom-white"></div>
+      </section>
+    </div>
+
+    <div class="contact-container">
+      <section class="contact mobile-layout desktop-layout">
+        <h2>We'd love to hear from you!</h2>
+        <p>
+          Looking for a vendor? Want to donate to our New Farmer Bursary Fund?
+          Need a bag or market tokens? Lost something or have a suggestion?
+          Please let us know. The market staff and volunteers on site can help
+          you out, or for other inquiries, you can contact us online.
+        </p>
+        <h3>Contact Info</h3>
+        <address>
+          <div class="icon-holder">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <p>PO Box 3301 <br />Courtenay BC <br />V9N 5N5</p>
+          </div>
+          <div class="icon-holder email">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:email@example.com">info@cvfm.ca</a>
+          </div>
+          <div class="icon-holder">
+            <i class="fa-brands fa-instagram"></i>
+            <a
+              class="social-media"
+              href="https://www.instagram.com/comox_valley_farmers_market/"
+              >Instagram</a
+            >
+          </div>
+        </address>
+        <iframe
+          class="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10322.593830659443!2d-125.011117720889!3d49.69859257238851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomox%20valley%20farmers%20market!5e0!3m2!1sen!2sca!4v1701313614914!5m2!1sen!2sca"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <blockquote>
+          <i
+            >We respectfully acknowledge that the land we gather on is on the
+            Unceded traditional territory of the K'omoks First Nation, the
+            traditional keepers of this land.
+          </i>
+        </blockquote>
+      </section>
+    </div>
+
+    <div class="nav-container">
+      <footer class="mobile-layout desktop-layout">
+        <img class="logo" src="images/logo1.png" alt="logo of a chicken head saying comox valley farmers market"/>
+        <p>Rooted in Community, Nourished by Local Bounty</p>
+        <h2>Comox Valley Farmers Market</h2>
+        <p>Your Source for Fresh Connections.</p>
+        <nav>
+          <div class="list-container">
+            <ul>
+              <li><a href="ourmarkets.html">Our Markets</a></li>
+              <li class="currentpage">
+                <a href="community.html">Join the Community</a>
+              </li>
+              <li class="cursor-notallowed">
+                <a href="construction.html">Contact Us</a>
+              </li>
+              <li class="cursor-notallowed">
+                <a href="construction.html">About Us</a>
+              </li>
+              <li class="cursor-notallowed">
+                <a href="construction.html">Vendors</a>
+              </li>
+              <li class="home-link"><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="section-illustration-nav"></div>
+      </footer>
+    </div>
+
+    <div class="disclaimer-container bgcolour">
+      <section class="disclaimer desktop-layout">
+        <h3>Disclaimer</h3>
+        <p>
+          This is a fictional website that was designed and coded as an
+          educational exercise it is not intended to be seen outside of the
+          class enironment. None of the class environment. None of the content
+          and images were approved by the business owner.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
