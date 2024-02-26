@@ -4,7 +4,11 @@
 1. This is the initial DGL113 project repository readme file. When you view this file, it means you have accepted the project and cloned the initial repository. There is no starting file other than this readme for the project. You will create your own files based on your proposal and design, add them to the docs/ folder, then push your work back to GitHub.
 1. Write your project proposal directly in this file in the section below. At a minimum, you should describe what a website you are going to work on and the 3 features that you plan to implement. See the project description on Brightspace for more details.
 1. <b>This part of the project is due Mon. Feb. 26 at 11:59pm.</b>
-## Project Proposal
+# Project Proposal
+
+## Website Overview
+
+The website I hvae chosen to work on was my final project for DGL103 CSS & HTML, and was made for the Comox Valley Farmer's Market. It showcases 3 pages, inclusive of a homepage, a page about the upcoming markets, and a page with details on how to join the community as a shopper, vendor, or volunteer. The three JS features I want to add are a carousel, a form validation, and a top/bottom scroll. These features will add value to the website and improve user interface and experience. 
 
 ### UI feature 1 Carousel
 
@@ -35,7 +39,7 @@
 - Prevent form submission if any validation errors are detected. Only allow submission when all inputs are valid.
 - Provide visual indicators such as colored borders or icons to indicate the validation status of each field (valid, invalid, or pending).
 
-### UI Feature 3 Stroll to Top Button
+### UI Feature 3 Scroll to Top Button
 1. located on all pages of the farmers market website 
 1. add a "Scroll to Top" button where users are able to quickly navigate back to the top of the page
 1. Enhancing user experience by providing convenient access to the top of the page without manual scrolling.
