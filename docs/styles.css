@@ -524,6 +524,65 @@ tfoot {
   color: #fefae0;
 }
 
+.markets-carousel {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.market-tile {
+  flex: 0 0 auto;
+}
+
+/* Carousel container styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensure that overflow is hidden to hide slides outside the container */
+}
+
+/* Wrapper for carousel slides */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition for slide movement */
+}
+
+/* Individual carousel slide */
+.carousel-slide {
+  flex: 0 0 100%; /* Ensure each slide takes up full width */
+}
+
+/* Image styles */
+.carousel-slide img {
+  width: 100%; /* Make images responsive and fill their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Button styles */
+.cbutton {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Positioning for previous button */
+#prevBtn {
+  left: 0;
+}
+
+/* Positioning for next button */
+#nextBtn {
+  right: 0;
+}
+
+
+
+
+/*end of carousel
+
 /*--CONTACT--*/
 .contact h2,
 .contact h3,
