@@ -2,9 +2,11 @@
 /*
    Author: Emily Boucher
    Purpose: javascript to add user interactions to the page
-   Last Modified: February 18, 2024
+   Last Modified: April 2, 2024
 */
 
+//CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
+//CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
@@ -87,3 +89,25 @@ dotsNav.addEventListener('click', e=> {
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
     }
 );
+
+//----END OF CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
+//----END OF CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
+
+//SCROLL TO TOP JAVASCRIPT CODE
+
+const goTopBtn = document.querySelector('.go-top-btn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        goTopBtn.style.display = "block";
+    } else {
+        goTopBtn.style.display = "none";
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

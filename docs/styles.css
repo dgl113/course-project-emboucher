@@ -104,6 +104,30 @@ li {
   background-color: #9a581e;
   color: #fefae0;
 }
+
+/* NEW CODE FOR SCROLL BUTTON APRIL 2, 2024*/
+/* NEW CODE FOR SCROLL BUTTON APRIL 2, 2024*/
+
+.go-top-btn {
+  position: fixed;
+  bottom: 20px; 
+  right: 50%; 
+  transform: translateX(50%); 
+  z-index: 9999; 
+  display: none; 
+  background-color:#ffd7a9;
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.go-top-btn:hover {
+  background-color:#bc6c25 /* Hover background color */
+}
+/* END OF NEW CODE FOR SCROLL BUTTON APRIL 2, 2024*/
+
 /*--HEADER---*/
 header {
   padding: 0 21px;
@@ -539,7 +563,7 @@ tfoot {
 
 /* Carousel container styles */
 /*----NEW CODE APRIL 2, 2024----*/
-.h2-colour{
+.h2-colour {
   color: #dfc9af;
 }
 .carousel {
@@ -582,7 +606,7 @@ tfoot {
   width: 100%;
 }
 
-.carousel__slide p{
+.carousel__slide p {
   background: transparent;
 }
 
