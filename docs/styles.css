@@ -539,6 +539,9 @@ tfoot {
 
 /* Carousel container styles */
 /*----NEW CODE APRIL 2, 2024----*/
+.h2-colour{
+  color: #dfc9af;
+}
 .carousel {
   position: relative;
   height: 300px;
@@ -577,6 +580,10 @@ tfoot {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.carousel__slide p{
+  background: transparent;
 }
 
 .carousel__button {
