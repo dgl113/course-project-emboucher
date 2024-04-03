@@ -63,7 +63,8 @@ li {
 }
 
 /*--------LINKS---------*/
-.button, .button2{
+.button,
+.button2 {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -93,16 +94,16 @@ li {
   background-color: #fefae0;
   color: #bc6c25;
 }
-.button2{
+.button2 {
   border: #dda15e solid 2px;
   background-color: #fefae0;
   color: #9a581e;
 }
-  .button2:hover {
-    border: #bc6c25 solid 2px;
-    background-color: #9a581e;
-    color: #fefae0;
-  }
+.button2:hover {
+  border: #bc6c25 solid 2px;
+  background-color: #9a581e;
+  color: #fefae0;
+}
 /*--HEADER---*/
 header {
   padding: 0 21px;
@@ -222,7 +223,8 @@ i {
   font-size: 1.3rem;
   line-height: 1rem;
 }
-a.button, a.button2 {
+a.button,
+a.button2 {
   margin: 15px;
 }
 .button-container {
@@ -253,7 +255,7 @@ a.button, a.button2 {
 .communitypage .nav-container h2 {
   color: #283618;
 }
-.communitypage .number{
+.communitypage .number {
   width: 70px;
 }
 /*----COMMUNITY----*/
@@ -287,14 +289,13 @@ a.button, a.button2 {
   padding-bottom: 100px;
 }
 /*------COMMUNITYPAGE STYLES--*/
-.communitypage .hide-on-mobile{
+.communitypage .hide-on-mobile {
   display: none;
 }
 
 /*-------OUR MARKETS-----*/
-.ourmarkets.mobile-layout{
+.ourmarkets.mobile-layout {
   margin-top: 10px;
-
 }
 .card-container {
   display: flex;
@@ -302,7 +303,8 @@ a.button, a.button2 {
   flex-wrap: wrap;
   margin: auto;
 }
-.ourmarkets h2, .ourmarkets p{
+.ourmarkets h2,
+.ourmarkets p {
   color: #fefae0;
 }
 .content-container.mobile-layout {
@@ -421,7 +423,7 @@ a.button, a.button2 {
 .link-layout {
   margin-bottom: 40px;
 }
-.ourmarkets .mobile-layout{
+.ourmarkets .mobile-layout {
   margin-top: 0;
 }
 
@@ -506,7 +508,9 @@ tfoot {
   display: flex;
   justify-content: center;
 }
-.marketpage .sat-market p, .marketpage .sat-market .market-container h2, .sun-market .market-container h2{
+.marketpage .sat-market p,
+.marketpage .sat-market .market-container h2,
+.sun-market .market-container h2 {
   color: #fefae0;
 }
 .sat-market h3 {
@@ -577,9 +581,6 @@ tfoot {
 #nextBtn {
   right: 0;
 }
-
-
-
 
 /*end of carousel
 
@@ -749,18 +750,18 @@ footer.mobile-layout.desktop-layout {
   font-style: italic;
 }
 /*-----CONSTRUCTION PAGE-----*/
-.construction-image{
+.construction-image {
   width: 300px;
   margin-top: 40px;
 }
-.constructionpage h1{
+.constructionpage h1 {
   font-size: 7.2rem;
   margin-top: 100px;
 }
-.constructionpage .hero h2{
+.constructionpage .hero h2 {
   color: #fefae0;
 }
-.constructionpage footer.mobile-layout.desktop-layout{
+.constructionpage footer.mobile-layout.desktop-layout {
   margin-top: 40px;
 }
 /* Large devices (desktops, 1200px and up) */
@@ -896,6 +897,9 @@ footer.mobile-layout.desktop-layout {
     width: 200px;
   }
   /*---MARKET PAGE STYLES----*/
+  /*---MARKET PAGE STYLES----*/
+  /*---MARKET PAGE STYLES----*/
+
   .marketpage .hero .illustration {
     left: 2%;
   }
@@ -920,13 +924,13 @@ footer.mobile-layout.desktop-layout {
     justify-content: center;
     align-items: center;
   }
-  .marketpage .ourmarkets .wed-market h2{
+  .marketpage .ourmarkets .wed-market h2 {
     color: #606c38;
-  } 
-  .marketpage .ourmarkets .wed-market p{
+  }
+  .marketpage .ourmarkets .wed-market p {
     color: #283618;
   }
-  .marketpage .ourmarkets .wed-market .description p{
+  .marketpage .ourmarkets .wed-market .description p {
     color: #fefae0;
   }
   .season-container {
@@ -989,16 +993,18 @@ footer.mobile-layout.desktop-layout {
   /*-----------*/
 
   /*----OUR MARKETS DESKTOP----*/
+  /*----OUR MARKETS DESKTOP----*/
+  /*----OUR MARKETS DESKTOP----*/
   .block-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .marketpage .ourmarkets h2{
+  .marketpage .ourmarkets h2 {
     font-size: 4.2rem;
   }
-  .marketpage .ourmarkets .content-container p{
+  .marketpage .ourmarkets .content-container p {
     color: #283618;
   }
   .content-container p {
@@ -1021,6 +1027,84 @@ footer.mobile-layout.desktop-layout {
   .opacitylayer h2 {
     font-size: 3rem;
   }
+
+    /*----NEW CODE APRIL 2, 2024----*/
+    .carousel {
+position:relative;
+height: 800px;
+width: 80%;
+margin: 0 auto;
+margin-bottom: 130px;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel__slide {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+}
+
+.carousel__button--left{
+  left: -60px;
+}
+
+.carousel__button--right{
+  right: -60px;
+}
+.carousel__button img{
+  width: 50px;
+}
+
+.carousel__nav{ 
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 30px;
+  background: rgba(223, 201, 175, .4)
+}
+
+.carousel__indicator.current-slide{
+  background: rgba(223, 201, 175, 1)
+}
+
+  /*----OUR MARKETS DESKTOP----*/
+  /*----OUR MARKETS DESKTOP----*/
+  /*----OUR MARKETS DESKTOP----*/
+
   /*--Community Page Styles--*/
   .communitypage h1 {
     font-size: 7.2rem;
@@ -1029,20 +1113,20 @@ footer.mobile-layout.desktop-layout {
   .communitypage p {
     width: 600px;
   }
-  .communitypage .step-container a{
+  .communitypage .step-container a {
     color: #9a581e;
     text-transform: uppercase;
     text-decoration: none;
   }
-  .communitypage .step-container a:hover{
+  .communitypage .step-container a:hover {
     color: #283618;
     text-decoration: underline;
   }
   .communitypage .illustration {
     left: -50px;
   }
-  .communitypage .volunteer p{
-    width:1000px
+  .communitypage .volunteer p {
+    width: 1000px;
   }
   .communitypage .cta.desktop-layout {
     margin-top: 0;
@@ -1050,13 +1134,13 @@ footer.mobile-layout.desktop-layout {
   .communitypage .contact address p {
     width: auto;
   }
-  .communitypage .hide-on-mobile{
+  .communitypage .hide-on-mobile {
     display: flex;
   }
-  .communitypage .number{
-    width:140px;
+  .communitypage .number {
+    width: 140px;
   }
-  .communitypage .step-container{
+  .communitypage .step-container {
     display: flex;
     flex-direction: column;
     border: #606c38 dotted 2px;
@@ -1067,29 +1151,30 @@ footer.mobile-layout.desktop-layout {
     justify-content: flex-start;
     width: 300px;
   }
-  .communitypage .num-wrap{
+  .communitypage .num-wrap {
     display: flex;
     flex-direction: column;
   }
-  .communitypage .step-container li{
+  .communitypage .step-container li {
     text-transform: none;
     text-align: left;
   }
-  .communitypage .step-container ol{
+  .communitypage .step-container ol {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
- .communitypage .three-step-wrap{
+  .communitypage .three-step-wrap {
     display: flex;
     flex-direction: row;
   }
-  .communitypage .button-container{
+  .communitypage .button-container {
     display: flex;
     flex-direction: row;
   }
-  .communitypage a.button, .communitypage a.button2{
-    margin:30px 15px 70px 15px;
+  .communitypage a.button,
+  .communitypage a.button2 {
+    margin: 30px 15px 70px 15px;
   }
   /*---------JOIN THE COMMUNITY--DESKTOP-----*/
   .community.desktop-layout {
