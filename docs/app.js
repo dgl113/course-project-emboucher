@@ -100,8 +100,10 @@ const goTopBtn = document.querySelector('.go-top-btn');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 20) {
         goTopBtn.style.display = "block";
+        goTopBtn.classList.add("show");
     } else {
         goTopBtn.style.display = "none";
+        goTopBtn.classList.remove("show");
     }
 });
 

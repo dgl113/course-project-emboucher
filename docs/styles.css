@@ -110,9 +110,8 @@ li {
 
 .go-top-btn {
   position: fixed;
-  bottom: 20px; 
-  right: 50%; 
-  transform: translateX(50%); 
+  bottom: 50%; 
+  right: 20px; /* Adjusted right side */
   z-index: 9999; 
   display: none; 
   background-color:#ffd7a9;
@@ -121,10 +120,16 @@ li {
   border: none;
   border-radius: 5px; 
   cursor: pointer;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Updated transition properties */
+}
+
+.go-top-btn.show {
+  opacity: 1;
+  transform: translateY(-50%); /* Added translateY transform */
 }
 
 .go-top-btn:hover {
-  background-color:#bc6c25 /* Hover background color */
+  background-color:#bc6c25; /* Hover background color */
 }
 /* END OF NEW CODE FOR SCROLL BUTTON APRIL 2, 2024*/
 
