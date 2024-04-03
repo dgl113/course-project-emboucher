@@ -6,7 +6,6 @@
 */
 
 //CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
-//CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
@@ -16,28 +15,31 @@ const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-//arrange the slides next to one another
+// Arrange the slides next to one another
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
 slides.forEach(setSlidePosition);
 
+// Move to the selected slide
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 }
 
-const updateDots =(currentDot, targetDot) => {
+// Update the navigation dots
+const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
 }
 
+// Show or hide navigation arrows
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
-    } else if (targetIndex === slides.length -1) {
+    } else if (targetIndex === slides.length - 1) {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.add('is-hidden');
     } else {
@@ -46,7 +48,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
-//when i click left, move slides to the left
+// Handle click on left arrow button
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
@@ -59,8 +61,8 @@ prevButton.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
 
-// when i click right, move slides to the right
-nextButton.addEventListener('click' , e=> {
+// Handle click on right arrow button
+nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
@@ -72,9 +74,8 @@ nextButton.addEventListener('click' , e=> {
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-//when i click the nav indicators, move to that slide
-dotsNav.addEventListener('click', e=> {
-    //what indicator was clicked on?
+// Handle click on navigation dots
+dotsNav.addEventListener('click', e => {
     const targetDot = e.target.closest('button')
 
     if (!targetDot) return;
@@ -87,16 +88,13 @@ dotsNav.addEventListener('click', e=> {
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
-    }
-);
+});
 
-//----END OF CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
-//----END OF CAROUSEL JAVASCRIPT ON OURMARKETS PAGE
-
-//SCROLL TO TOP JAVASCRIPT CODE
+// SCROLL TO TOP JAVASCRIPT CODE
 
 const goTopBtn = document.querySelector('.go-top-btn');
 
+// Show or hide the scroll-to-top button based on scroll position
 window.addEventListener('scroll', () => {
     if (window.scrollY > 20) {
         goTopBtn.style.display = "block";
@@ -107,9 +105,85 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Scroll smoothly to the top of the page
 function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 }
+
+// FORM VALIDATION
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('signup-form');
+    const firstNameInput = document.getElementById('fname');
+    const lastNameInput = document.getElementById('lname');
+    const emailInput = document.getElementById('email');
+  
+    // Handle form submission
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (validateForm()) {
+        // Display success messages and submit the form
+        displaySuccessMessage(firstNameInput);
+        displaySuccessMessage(lastNameInput);
+        displaySuccessMessage(emailInput);
+        // Uncomment the following line if you want to submit the form
+        // form.submit();
+        // Reset form after submission
+        form.reset();
+      }
+    });
+  
+    // Validate form inputs
+    function validateForm() {
+      let isValid = true;
+  
+      // Validate first name
+      if (firstNameInput.value.trim() === '') {
+        displayError(firstNameInput, 'First name is required');
+        isValid = false;
+      } else {
+        hideError(firstNameInput);
+      }
+  
+      // Validate last name
+      if (lastNameInput.value.trim() === '') {
+        displayError(lastNameInput, 'Last name is required');
+        isValid = false;
+      } else {
+        hideError(lastNameInput);
+      }
+  
+      // Validate email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value)) {
+        displayError(emailInput, 'Invalid email address');
+        isValid = false;
+      } else {
+        hideError(emailInput);
+      }
+  
+      return isValid;
+    }
+  
+    // Display error message
+    function displayError(inputElement, errorMessage) {
+      const errorContainer = inputElement.nextElementSibling;
+      errorContainer.textContent = errorMessage;
+      errorContainer.style.display = 'block';
+    }
+  
+    // Hide error message
+    function hideError(inputElement) {
+      const errorContainer = inputElement.nextElementSibling;
+      errorContainer.textContent = '';
+      errorContainer.style.display = 'none';
+    }
+  
+    // Display success message
+    function displaySuccessMessage(inputElement) {
+      alert(`${inputElement.name} submitted successfully!`);
+    }
+});
