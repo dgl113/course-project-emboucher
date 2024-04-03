@@ -553,6 +553,10 @@ tfoot {
   object-fit: cover;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .carousel__track-container {
   height: 100%;
   position: relative;
