@@ -1047,6 +1047,7 @@ margin-bottom: 130px;
   background: lightgreen;
   height: 100%;
   position: relative;
+  overflow: hidden;
 
 }
 
@@ -1054,6 +1055,9 @@ margin-bottom: 130px;
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
 }
 
 .carousel__slide {
@@ -1069,6 +1073,7 @@ margin-bottom: 130px;
   transform: translateY(-50%);
   background: transparent;
   border: 0;
+  cursor: pointer;
 }
 
 .carousel__button--left{
