@@ -23,20 +23,17 @@ The website I hvae chosen to work on was my final project for DGL103 CSS & HTML,
     - JS: calculate the amount by which to translate the container element horizontally when the user navigates to the next or previous set of market tiles to create sliding effect.
     - JS: implement logic to handle boundary conditions, ensuring that the carousel loops back to the beginning or end when the user reaches the end or beginning of the market tiles.
 
-### UI feature 2 Form Validation
-1. Located on the home page
-1. Will involve validating the form inputs, and ensuring that users provide accurate information before submitting the form
-1. Will be done in real-time as users interact with the form fields
-1. Real-time form validation using JavaScript
-1. helping to correct any errors before submitting the information.
-1. enhances the user experience and ensures the accuracy of the data submitted through the form.
+### UI feature 2 New Tab Confirmation 
+1. Located on the community page in one link and one button
+1. Provides users with the option to open a document in a new tab for easy access
+1. Enhances user experience by allowing flexibility in accessing resources
+1. JavaScript function added directly to the page for simplicity
 
-    - JS: Attach event listeners to the form inputs to detect typing
-    - Create JavaScript functions to validate each form field based on specific criteria, such as required fields, email format, or character limits.
-    - As users interact with the form fields, trigger the validation functions to check the input values
-    - Prevent form submission if any validation errors are detected. 
-    - Only allow final submission when all inputs are valid.
-    - Provide visual indicators such as colored borders or icons to indicate the validation status of each field (valid, invalid, or pending).
+
+    - The feature allows users to access a document (PDF) by clicking a button.
+    - Upon clicking the button, a confirmation dialog box appears, asking the user if they  want to open the document in a new tab.
+    - If the user selects "Yes" in the confirmation dialog, the document opens in a new tab.
+    - If the user selects "No" in the confirmation dialog, they remain on the current page.
 
 ### UI Feature 3 Scroll to Top Button
 1. Located on all pages of the farmers market website 
