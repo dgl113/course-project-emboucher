@@ -133,77 +133,77 @@ dotsNav.addEventListener('click', e => {
         requestAnimationFrame(scroll);
     }
 
-// FORM VALIDATION
+// // FORM VALIDATION
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('signup-form');
-    const firstNameInput = document.getElementById('fname');
-    const lastNameInput = document.getElementById('lname');
-    const emailInput = document.getElementById('email');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const form = document.getElementById('signup-form');
+//     const firstNameInput = document.getElementById('fname');
+//     const lastNameInput = document.getElementById('lname');
+//     const emailInput = document.getElementById('email');
   
-    // Handle form submission
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      if (validateForm()) {
-        // Display success messages and submit the form
-        displaySuccessMessage(firstNameInput);
-        displaySuccessMessage(lastNameInput);
-        displaySuccessMessage(emailInput);
-        // Uncomment the following line if you want to submit the form
-        // form.submit();
-        // Reset form after submission
-        form.reset();
-      }
-    });
+//     // Handle form submission
+//     form.addEventListener('submit', function(event) {
+//       event.preventDefault();
+//       if (validateForm()) {
+//         // Display success messages and submit the form
+//         displaySuccessMessage(firstNameInput);
+//         displaySuccessMessage(lastNameInput);
+//         displaySuccessMessage(emailInput);
+//         // Uncomment the following line if you want to submit the form
+//         // form.submit();
+//         // Reset form after submission
+//         form.reset();
+//       }
+//     });
   
-    // Validate form inputs
-    function validateForm() {
-      let isValid = true;
+//     // Validate form inputs
+//     function validateForm() {
+//       let isValid = true;
   
-      // Validate first name
-      if (firstNameInput.value.trim() === '') {
-        displayError(firstNameInput, 'First name is required');
-        isValid = false;
-      } else {
-        hideError(firstNameInput);
-      }
+//       // Validate first name
+//       if (firstNameInput.value.trim() === '') {
+//         displayError(firstNameInput, 'First name is required');
+//         isValid = false;
+//       } else {
+//         hideError(firstNameInput);
+//       }
   
-      // Validate last name
-      if (lastNameInput.value.trim() === '') {
-        displayError(lastNameInput, 'Last name is required');
-        isValid = false;
-      } else {
-        hideError(lastNameInput);
-      }
+//       // Validate last name
+//       if (lastNameInput.value.trim() === '') {
+//         displayError(lastNameInput, 'Last name is required');
+//         isValid = false;
+//       } else {
+//         hideError(lastNameInput);
+//       }
   
-      // Validate email
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(emailInput.value)) {
-        displayError(emailInput, 'Invalid email address');
-        isValid = false;
-      } else {
-        hideError(emailInput);
-      }
+//       // Validate email
+//       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//       if (!emailPattern.test(emailInput.value)) {
+//         displayError(emailInput, 'Invalid email address');
+//         isValid = false;
+//       } else {
+//         hideError(emailInput);
+//       }
   
-      return isValid;
-    }
+//       return isValid;
+//     }
   
-    // Display error message
-    function displayError(inputElement, errorMessage) {
-      const errorContainer = inputElement.nextElementSibling;
-      errorContainer.textContent = errorMessage;
-      errorContainer.style.display = 'block';
-    }
+//     // Display error message
+//     function displayError(inputElement, errorMessage) {
+//       const errorContainer = inputElement.nextElementSibling;
+//       errorContainer.textContent = errorMessage;
+//       errorContainer.style.display = 'block';
+//     }
   
-    // Hide error message
-    function hideError(inputElement) {
-      const errorContainer = inputElement.nextElementSibling;
-      errorContainer.textContent = '';
-      errorContainer.style.display = 'none';
-    }
+//     // Hide error message
+//     function hideError(inputElement) {
+//       const errorContainer = inputElement.nextElementSibling;
+//       errorContainer.textContent = '';
+//       errorContainer.style.display = 'none';
+//     }
   
-    // Display success message
-    function displaySuccessMessage(inputElement) {
-      alert(`${inputElement.name} submitted successfully!`);
-    }
-});
+//     // Display success message
+//     function displaySuccessMessage(inputElement) {
+//       alert(`${inputElement.name} submitted successfully!`);
+//     }
+// });

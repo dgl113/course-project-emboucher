@@ -229,9 +229,9 @@
             <ol class="hide-on-mobile">
               <li>
                 Review the
-                <a
-                  href="https://cvfm.ca/wp-content/uploads/2021/07/Rules-of-Membership_Amended-Approved-April-20-2021-2.pdf"
-                  target="_blank"
+                <a onclick="checker()"
+                href="Rules.pdf"
+                target="_blank"
                   >Rules of Membership</a
                 >.
               </li>
@@ -283,9 +283,9 @@
           </div>
         </div>
         <div class="button-container">
-          <a
+          <a onclick="checker()"
             class="button2"
-            href="https://cvfm.ca/wp-content/uploads/2021/07/Rules-of-Membership_Amended-Approved-April-20-2021-2.pdf"
+            href="Rules.pdf"
             target="_blank"
             >More Info</a
           >
@@ -501,5 +501,14 @@ window.addEventListener('scroll', () => {
     }
   </script>
       <!--scroll to top button-->
+      <script>
+      function checker() {
+        var result = confirm ('Would you like to view the Rules document in a separte tab?');
+        if (result == false) {
+          event.preventDefault();
+        }
+      }
+      </script>
+    
   </body>
 </html>
