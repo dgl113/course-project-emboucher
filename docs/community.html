@@ -443,5 +443,63 @@
         </p>
       </section>
     </div>
+    <!--scroll to top button-->
+    <button class="go-top-btn" onclick="scrollToTop()" title="Go to Top">
+      ↑
+    </button>
+    
+    <div class="disclaimer-container bgcolour">
+      <section class="disclaimer desktop-layout">
+        <h3>Disclaimer</h3>
+        <p>
+          This is a fictional website that was designed and coded as an
+          educational exercise it is not intended to be seen outside of the
+          class enironment. None of the class environment. None of the content
+          and images were approved by the business owner.
+        </p>
+      </section>
+    </div>
+    <script>
+window.addEventListener('scroll', () => {
+        const goTopBtn = document.querySelector('.go-top-btn');
+        if (window.scrollY > 20) {
+            goTopBtn.classList.add("show");
+        } else {
+            goTopBtn.classList.remove("show");
+        }
+    });
+
+    // Scroll smoothly to the top of the page with custom animation
+    function scrollToTop() {
+        const scrollingElement = document.scrollingElement || document.documentElement;
+        const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+        const startTop = scrollingElement.scrollTop;
+
+        const easeInOutCubic = (t, b, c, d) => {
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+            return c / 2 * ((t -= 2) * t * t + 2) + b;
+        };
+
+        const scroll = (currentTime) => {
+            const elapsedTime = currentTime - startTime;
+            const duration = 800; // Adjust scroll duration here (in milliseconds)
+            const top = easeInOutCubic(elapsedTime, startTop, -startTop, duration);
+
+            scrollingElement.scrollTop = top;
+
+            if (elapsedTime < duration) {
+                // Continue scrolling
+                requestAnimationFrame(scroll);
+            } else {
+                // Animation finished
+                scrollingElement.scrollTop = 0;
+            }
+        };
+
+        // Start scrolling animation
+        requestAnimationFrame(scroll);
+    }
+  </script>
+      <!--scroll to top button-->
   </body>
 </html>

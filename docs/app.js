@@ -92,26 +92,46 @@ dotsNav.addEventListener('click', e => {
 
 // SCROLL TO TOP JAVASCRIPT CODE
 
-const goTopBtn = document.querySelector('.go-top-btn');
-
-// Show or hide the scroll-to-top button based on scroll position
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-        goTopBtn.style.display = "block";
-        goTopBtn.classList.add("show");
-    } else {
-        goTopBtn.style.display = "none";
-        goTopBtn.classList.remove("show");
-    }
-});
-
-// Scroll smoothly to the top of the page
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+       // Show or hide the scroll-to-top button based on scroll position
+       window.addEventListener('scroll', () => {
+        const goTopBtn = document.querySelector('.go-top-btn');
+        if (window.scrollY > 20) {
+            goTopBtn.classList.add("show");
+        } else {
+            goTopBtn.classList.remove("show");
+        }
     });
-}
+
+    // Scroll smoothly to the top of the page with custom animation
+    function scrollToTop() {
+        const scrollingElement = document.scrollingElement || document.documentElement;
+        const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+        const startTop = scrollingElement.scrollTop;
+
+        const easeInOutCubic = (t, b, c, d) => {
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+            return c / 2 * ((t -= 2) * t * t + 2) + b;
+        };
+
+        const scroll = (currentTime) => {
+            const elapsedTime = currentTime - startTime;
+            const duration = 800; // Adjust scroll duration here (in milliseconds)
+            const top = easeInOutCubic(elapsedTime, startTop, -startTop, duration);
+
+            scrollingElement.scrollTop = top;
+
+            if (elapsedTime < duration) {
+                // Continue scrolling
+                requestAnimationFrame(scroll);
+            } else {
+                // Animation finished
+                scrollingElement.scrollTop = 0;
+            }
+        };
+
+        // Start scrolling animation
+        requestAnimationFrame(scroll);
+    }
 
 // FORM VALIDATION
 
