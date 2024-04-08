@@ -16,7 +16,7 @@ The website I hvae chosen to work on was my final project for DGL103 CSS & HTML,
 1. View multiple market tiles by scrolling horizontally.
 1. Users visiting the "Our Markets" page will be able to easily navigate through the various market tiles to explore different markets and their details.
 
-    - HTML: ensure that the market tiles are structured within a container element, such as a <div>, with the appropriate class or ID for targeting in JavaScript.
+    - HTML: ensure that the market photos are structured within a container element, such as a <div>, with the appropriate class or ID for targeting in JavaScript.
     - CSS: Might have to re-style containers to better suit carousel size. Adjust widths, heights, margins.
     - Variables: Define variables to store references to the container element, individual market tiles, and any other relevant elements.
     - JS: attach event listeners, such as click handlers, to arrow buttons or navigation indicators to control the sliding motion of the carousel.
